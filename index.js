@@ -3,7 +3,7 @@ const button = document.querySelector('button');
 button.addEventListener('click', () => {
     Notification.requestPermission().then(permission => {
         if (permission === 'granted') {
-            // setTimeout(() => {
+            setTimeout(() => {
                 const notification = new Notification(
                     'Example Notif',
                     {
@@ -19,7 +19,7 @@ button.addEventListener('click', () => {
                 notification.addEventListener("error", (error) => {
                     alert(error);
                 });
-            // }, 2000);
+            }, 2000);
         }
     });
 });
