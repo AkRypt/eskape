@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
     <script src="index.js" defer></script>
+
+    <script>
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+        OneSignalDeferred.push(function (OneSignal) {
+            OneSignal.init({
+                appId: "0b6d58fb-3e30-4c97-9da9-af376c6d30c1",
+            });
+        });
+    </script>
 </head>
 
 <body>
