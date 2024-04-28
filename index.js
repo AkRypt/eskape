@@ -15,9 +15,11 @@ button.addEventListener('click', () => {
                         icon: 'https://via.placeholder.com/150',
                     }
                 );
-
                 notification.addEventListener("error", (error) => {
                     alert(error);
+                });
+                navigator.serviceWorker.ready.then(function (registration) {
+                    registration.showNotification('Notification with ServiceWorker');
                 });
             }, 2000);
         }
