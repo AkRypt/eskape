@@ -8,11 +8,16 @@
     <title>My Webpage</title>
     <script src="index.js" defer></script>
 
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <script>
         window.OneSignalDeferred = window.OneSignalDeferred || [];
-        OneSignalDeferred.push(function (OneSignal) {
-            OneSignal.init({
+        window.OneSignalDeferred.push(async function (OneSignal) {
+            await OneSignal.init({
                 appId: "0b6d58fb-3e30-4c97-9da9-af376c6d30c1",
+                notifyButton: {
+                    enable: true
+                },
+                serviceWorkerPath: "/OneSignalSDKWorker.js",
             });
         });
     </script>
