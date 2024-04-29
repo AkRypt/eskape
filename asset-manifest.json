@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/eskape/static/css/main.f855e6bc.css",
-    "main.js": "/eskape/static/js/main.5244c660.js",
+    "main.js": "/eskape/static/js/main.dbed1fc8.js",
     "static/js/453.620a8fbc.chunk.js": "/eskape/static/js/453.620a8fbc.chunk.js",
     "index.html": "/eskape/index.html",
     "main.f855e6bc.css.map": "/eskape/static/css/main.f855e6bc.css.map",
-    "main.5244c660.js.map": "/eskape/static/js/main.5244c660.js.map",
+    "main.dbed1fc8.js.map": "/eskape/static/js/main.dbed1fc8.js.map",
     "453.620a8fbc.chunk.js.map": "/eskape/static/js/453.620a8fbc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.5244c660.js"
+    "static/js/main.dbed1fc8.js"
   ]
 }
