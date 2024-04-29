@@ -1,7 +1,5 @@
 import { initializeApp } from "firebase/app";
 import { getMessaging, getToken } from "firebase/messaging";
-importScripts('https://www.gstatic.com/firebasejs/<v9+>/firebase-app-compat.js');
-importScripts('https://www.gstatic.com/firebasejs/<v9+>/firebase-messaging-compat.js');
 
 const firebaseConfig = {
     apiKey: "AIzaSyCW-i0Sj5CpbDN-50sIdoW6qDu5X-uSI0E",
