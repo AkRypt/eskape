@@ -11,7 +11,7 @@ const firebaseConfig = {
     measurementId: "G-DYDHNJD96Z"
 };
 
-
+let curToken;
 
 export function requestPermission() {
     Notification.requestPermission()
@@ -29,6 +29,7 @@ export function requestPermission() {
                 }).then((currentToken) => {
                     if (currentToken) {
                         console.log("currentToken: ", currentToken);
+                        curToken = currentToken;
                     } else {
                         console.log("Can not get token");
                     }
@@ -44,3 +45,8 @@ export function requestPermission() {
 }
 
 requestPermission();
+
+export function getCurToken() {
+    return curToken;
+}
+
